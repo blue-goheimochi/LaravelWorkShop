@@ -104,7 +104,7 @@ namespaceやprefixなどを利用したグループ化、
 composerでインストールすることが可能です。  
 [アノテーションを利用するルーティング](http://laravelcollective.com/docs/5.0/annotations)
 
-app/Http/router.phpを以下の様に変更してみて下さい  
+app/Http/routes.phpを以下の様に変更してみて下さい
 ```php
 \Route::get('/', function() {
     return "Hello Laravel!";
@@ -196,7 +196,7 @@ app/resources/index.blade.phpを作成してください
 </body>
 </html>
 ```
-router.phpは先ほどものを以下の様に変更します  
+routes.phpは先ほどものを以下の様に変更します
 ```php
 \Route::get('/', function() {
     return view('index')->with('name', \Input::get('name', "Laravel!"));
